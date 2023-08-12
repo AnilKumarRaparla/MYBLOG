@@ -1,0 +1,312 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}  
+
+body {
+    background-color: rgb(2, 79, 65);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+header p {
+font-size: 1.2rem;
+
+animation: rotate3D 9s linear infinite;
+}
+
+@keyframes rotate3D {
+0% {
+transform: rotateY(0deg);
+}
+50% {
+transform: rotateY(180deg);
+}
+100% {
+transform: rotateY(360deg);
+}
+}
+/* Global styles */
+header {
+    background-color: #01161f;
+    color: #f4f0f0;
+    padding: 18px;
+    text-align: center;
+    border-radius: 0px;
+    box-shadow:0 10 20px rgba(2, 232, 244, 0.952);
+}
+header:hover{
+  box-shadow: 0 10px 30px rgb(1, 0, 18);
+transform: scale(1.05);
+border-radius: 0px;
+background-color:rgb(249, 5, 78)
+}
+
+@keyframes rotateText {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+
+header h1 {
+animation: pulsate 2s infinite;
+}
+/* Add this code to your existing CSS */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #f5580a; /* Match the background color of your header */
+    z-index: 100; /* Ensure the navigation bar stays above other content */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: #1a0101;
+    background-color: rgb(254, 179, 3); /* Match the background color of your header */
+    box-shadow: 0 10 20px rgba(255, 255, 255, 0.952);
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #0c0116;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #1e00ff; /* Change to your preferred color */
+}
+
+@keyframes pulsate {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.2);
+}
+100% {
+transform: scale(1);
+}
+}
+nav a {
+transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+color: #ff4500; /* Change to your preferred color */
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+a {
+    color: #f4f2f6;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #800080;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: #1a0101;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+/* About Section */
+#about {
+    background-color: #000;
+    padding: 50px;
+    text-align: justify;
+    margin: 50px 0;
+    box-shadow: 0 10 20px rgba(2, 232, 244, 0.952);
+    border-radius: 0px;
+}
+#about h2{
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fcb606;
+}
+#about p{
+  color: #fafafa;
+}
+.project {
+transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.project:hover {
+box-shadow: 0 10px 30px rgb(2, 249, 80);
+transform: scale(1.05);
+border-radius: 0px;
+background-color:rgb(255, 255, 255)
+}
+.project:hover p{
+    color: #0c0c0c;
+}
+.project:hover h3{
+color: blue;
+}
+.project:hover a{
+color: #1e00ff;
+}
+/* Portfolio Section */
+#projects {
+    background-color: rgb(2, 2, 28);
+    padding: 50px;
+    text-align: center;
+    margin: 50px 0;
+    
+    border-radius: 0px;
+}
+
+.project {
+    margin-bottom: 30px;
+    text-align: left;
+}
+#projects h2 {
+font-size: 1.5rem;
+color: #fcb606;
+}
+
+.project h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #fcc203;
+    margin-left: 50px;
+
+}
+
+.project p {
+    font-size: 1rem;
+    color: #f9f8f8;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.project a {
+    font-size: 1.1rem;
+    color: #f7cb04;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #0c0000;
+    padding: 50px;
+    text-align: center;
+    margin: 50px 0;
+    box-shadow: 0 10px 20px rgba(245, 2, 2, 0.1);
+    border-radius: 0px;
+}
+
+#skills h2 {
+    font-size: 1.5rem;
+    color: #fdc303;
+    margin-bottom: 30px;
+}
+
+
+#skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li:hover{
+    background-color: hsl(49, 98%, 50%);
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 0px;
+    box-shadow: 0 10px 30px rgb(27, 2, 248);
+transform: scale(1.05);
+border-radius: 0px;
+background-color: white;
+}
+#skills li:hover p{
+    color: black;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #0464ea;
+    padding: 50px;
+    text-align: center;
+    margin: 50px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    
+}
+
+#contact h2 {
+    font-size: 1.rem;
+    color: #fffdfd;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #f9f5f5;
+}
+#contact:hover{
+  box-shadow: 0 10px 30px rgb(249, 191, 1);
+transform: scale(1.05);
+border-radius: 0px;
+background-color:rgb(26, 2, 23)
+}
+#contact:hover h2{
+color: #f7cb04;
+}
+
+/* Footer Section */
+footer {
+    background-color: #ef2a07;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+#skills li {
+display: inline-block; /* Display skills in a row */
+background-color: #4c4949;
+color: #fff;
+padding: 10px 20px;
+margin: 5px;
+border-radius: 0px; /* Increase border radius for a rounded look */
+font-size: 1.1rem;
+box-shadow: 0 10px 15px hsl(48, 98%, 50%);
+text-align: justify;
+}
+.skill-box h3{
+text-align: center;
+color: goldenrod;
+}
